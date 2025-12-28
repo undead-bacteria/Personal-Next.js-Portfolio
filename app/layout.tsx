@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata: Metadata = {
-  title: "Professional Portfolio | Full-Stack & DevOps Engineer",
+  title: "Professional Portfolio | Full-Stack Developer",
   description:
     "Portfolio website showcasing skills, projects, and professional experience in software development and DevOps.",
   keywords: [
