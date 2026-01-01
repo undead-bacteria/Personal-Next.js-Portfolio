@@ -75,6 +75,165 @@ export const skills = [
 ];
 
 // Projects
+export const projects = [
+  {
+    id: 1,
+    title: "Personal Portfolio Website",
+    description:
+      "A modern, responsive portfolio application built with Next.js, TypeScript, and Tailwind CSS, featuring dynamic content rendering and an integrated AI-powered chatbot for interactive user engagement.",
+    longDescription: `
+    Built a fully responsive, SEO-optimized portfolio application using Next.js (App Router), TypeScript, Tailwind CSS, and shadcn/ui. The project features an AI-powered chatbot assistant, animated project cards, an interactive experience timeline, and a contact form implemented with Next.js API routes and SendGrid. Includes dark mode support, sticky navigation, and is optimized for deployment on Vercel
+  `,
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "React",
+      "Framer Motion",
+      "SendGrid",
+      "Vercel",
+      "AI Chatbot",
+    ],
+    features: [
+      "Interactive AI chatbot assistant integrated via OpenAI API",
+      "Dynamic sections: Home, Skills, Projects, About, Experience, Contact",
+      "Animated project cards with live demos and GitHub links",
+      "Experience timeline with roles and achievements",
+      "About section with photo and social links",
+      "Contact form (Next.js API + SendGrid)",
+      "Deployed and optimized on Vercel",
+      "Tailwind CSS with dark mode and responsive design",
+      "SEO-friendly routing and performance optimization",
+      "Dark mode, sticky navigation, SEO optimization",
+    ],
+    challenges:
+      "Faced API quota limitations and resolved it by switching to OpenAI's free-tier API for chatbot functionality. Integrated it seamlessly using serverless Next.js API routes with error handling and fallback messaging.",
+    image: "/portfolio.png",
+    liveUrl: "https://bikeshshrestha.vercel.app/",
+    repoUrl: "https://github.com/undead-bacteria/Personal-Next.js-Portfolio",
+  },
+  {
+    id: 2,
+    title: "Simplified POS System",
+    description:
+      "A containerized, event-driven POS system leveraging Node.js microservices, MongoDB, RabbitMQ, and Docker.",
+    longDescription: `
+    A containerized, event-driven Point of Sale (POS) system built using a microservices architecture. The system consists of two independently deployable services: an order service that publishes order events to RabbitMQ and an inventory service that consumes those events to update stock levels. MongoDB is used for persistence, with Docker Compose orchestrating the full stack.
+  `,
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RabbitMQ",
+      "Docker",
+      "Docker Compose",
+    ],
+    features: [
+      "Order service for creating orders and sending messages to RabbitMQ",
+      "Inventory service for processing orders and updating stock",
+      "MongoDB for storing orders and inventory data",
+      "RabbitMQ for decoupled service communication",
+      "Fully containerized with Docker and Docker Compose",
+    ],
+    image: "/pos.jpeg",
+    liveUrl: "",
+    repoUrl: "https://github.com/undead-bacteria/Simple-POS-App",
+  },
+  {
+    id: 3,
+    title: "Don Bosco School Website",
+    description:
+      "A responsive and informative school website designed to showcase academic programs, facilities, and institutional values, with a clean UI and user-friendly navigation.",
+    longDescription: `
+    Designed and developed a responsive school website for Don Bosco School to present key  information including academics, facilities, faculty, and contact details. The website focuses on  accessibility, clarity, and performance, providing parents and students with an intuitive  browsing experience. It highlights the school's mission, achievements, infrastructure, and   extracurricular activities while maintaining a modern, professional design optimized for all  devices.
+  `,
+    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "Netlify"],
+    features: [
+      "Responsive layout optimized for desktop, tablet, and mobile devices",
+      "Clear navigation across sections such as Home, About, Facilities, and Contact",
+      "Informative sections highlighting academics, labs, sports, and activities",
+      "Clean and minimal UI focused on readability and usability",
+      "Fast-loading static site deployed on Netlify",
+      "Accessible design for parents, students, and staff",
+    ],
+    challenges:
+      "Ensuring clear information architecture and readability for a wide range of users, including parents and students, while keeping the design lightweight and easy to maintain.",
+    image: "/school.png",
+    liveUrl: "https://donboscoschool.netlify.app/",
+    repoUrl: "https://github.com/undead-bacteria/Don-Bosco-School-Brt",
+  },
+  {
+    id: 4,
+    title: "Social Media Application",
+    description:
+      "A full-stack social media application similar to Facebook, featuring user authentication, posts, likes, comments, and a real-time dashboard built using the MERN stack.",
+    longDescription: `
+    Built a full-featured social media platform using the MERN stack, enabling users to create  accounts, authenticate securely, create posts, upload images, and interact through likes and   comments. The application includes a responsive dashboard UI, RESTful APIs, and cloud-based media handling. Firebase Authentication ensures secure user access, while Cloudinary and Multer manage image uploads efficiently. The UI is designed with Material UI and Tailwind CSS to deliver a modern, responsive user experience across devices.
+  `,
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "REST API",
+      "Material UI",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "Cloudinary",
+      "Multer",
+    ],
+    features: [
+      "User authentication and authorization using Firebase Auth",
+      "Create, edit, delete posts with image uploads",
+      "Like and comment functionality on posts",
+      "User profile pages with personal posts and activity",
+      "Responsive dashboard interface",
+      "Image upload and optimization using Cloudinary and Multer",
+      "RESTful API architecture with secure endpoints",
+      "Modern UI built with Material UI and Tailwind CSS",
+    ],
+    challenges:
+      "Managing secure authentication and media uploads while maintaining performance and scalability. Solved by integrating Firebase Authentication for auth handling and Cloudinary for optimized image storage and delivery.",
+    image: "/socialmedia.png",
+    liveUrl: "",
+    repoUrl: "https://github.com/undead-bacteria/socialmedia",
+  },
+
+  {
+    id: 4,
+    title: "E-commerce Backend API",
+    description:
+      "A backend-only e-commerce application built with Django and Django REST Framework, providing product management, order processing, payment integration, and shipping functionality via RESTful APIs.",
+    longDescription: `
+    Developed a robust backend for an e-commerce platform using Django and Django REST Framework  (DRF). The API supports product catalog management, shopping cart operations, order processing, and secure payments. Carrier/shipping API integration is included to handle real-time  shipping rates and tracking. This backend is designed to serve as the core engine for a  full-stack e-commerce application, providing well-structured, secure, and scalable RESTful  endpoints.
+  `,
+    technologies: [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "Stripe API",
+      "Shipping API Integration",
+      "SQLite",
+      "REST API",
+    ],
+    features: [
+      "CRUD operations for products, categories, and inventory",
+      "Shopping cart and order management endpoints",
+      "Secure payment processing with Stripe",
+      "Carrier/shipping API integration for real-time shipping rates",
+      "User authentication and authorization",
+      "RESTful API endpoints following best practices",
+      "Error handling and input validation",
+      "Optimized for scalability and maintainability",
+    ],
+    challenges:
+      "Integrating payment and shipping APIs while ensuring secure, reliable, and real-time transactions. Resolved by using DRF serializers, Stripe webhooks, and proper API authentication techniques.",
+    image: "/ecommerce.png",
+    liveUrl: "",
+    repoUrl: "https://github.com/undead-bacteria/Django-Ecommerce-Backend",
+  },
+];
 
 // Experience data
 export const experiences = [

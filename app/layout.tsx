@@ -20,22 +20,22 @@ export const metadata: Metadata = {
     "devops",
     "software engineer",
   ],
-  authors: [{ name: "Your Name" }],
+  authors: [{ name: "Bikesh Shrestha" }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourportfolio.com",
-    title: "Professional Portfolio | Full-Stack & DevOps Engineer",
+    url: "https://bikeshshrestha.vercel.app/",
+    title: "Professional Portfolio | Full-Stack Developer",
     description:
       "Portfolio website showcasing skills, projects, and professional experience in software development and DevOps.",
     siteName: "Your Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Professional Portfolio | Full-Stack & DevOps Engineer",
+    title: "Professional Portfolio | Full-Stack Developer",
     description:
       "Portfolio website showcasing skills, projects, and professional experience in software development and DevOps.",
-    creator: "@yourusername",
+    creator: "@undeadbacteria",
   },
 };
 
